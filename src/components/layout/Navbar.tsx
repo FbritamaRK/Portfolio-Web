@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Moon, Sun } from 'lucide-react';
+import { Moon, Sun, Send } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export default function Navbar() {
@@ -43,10 +43,14 @@ export default function Navbar() {
       <div className={`flex items-center justify-between w-full max-w-7xl px-6 transition-all duration-300 glass ${scrolled ? 'py-3 rounded-[1.5rem] shadow-lg shadow-lavender/5' : 'py-4 rounded-[2rem]'}`}>
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-lavender to-soft-purple flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
-            {'</>'}
+          <div className="w-60 h-10 rounded-xl overflow-hidden bg-slate-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 ring-2 ring-transparent group-hover:ring-lavender/30">
+            <img 
+              src="/src/img/logo.png" 
+              alt="" // Kosong karena nama Anda sudah ada di komponen <span> di bawah
+              className="w-full h-full object-cover"
+            />
           </div>
-          <span className="heading font-bold text-xl tracking-tight group-hover:text-lavender transition-colors">Febritama Raka</span>
+          {/* <span className="heading font-bold text-xl tracking-tight group-hover:text-lavender transition-colors">Febritama Raka</span> */}
         </a>
 
         {/* Navigation */}
@@ -58,13 +62,13 @@ export default function Navbar() {
               <a 
                 key={id} 
                 href={`#${id}`} 
-                className={`text-sm font-medium relative transition-colors ${isActive ? 'text-lavender' : 'text-secondary hover:text-primary'}`}
+                className={`text-sm font-medium relative transition-colors ${isActive ? 'text-navy' : 'text-secondary hover:text-primary'}`}
               >
                 {link}
                 {isActive && (
                   <motion.div 
                     layoutId="activeTab"
-                    className="absolute -bottom-2.5 left-0 right-0 h-0.5 bg-lavender rounded-full"
+                    className="absolute -bottom-2.5 left-0 right-0 h-0.5 bg-navy rounded-full"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -75,18 +79,18 @@ export default function Navbar() {
 
         {/* Actions */}
         <div className="flex items-center gap-4">
-          <button 
+          {/* <button 
             onClick={() => setIsDark(!isDark)}
             className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/5 transition-colors text-secondary hover:text-primary"
             aria-label="Toggle dark mode"
           >
             {isDark ? <Moon size={20} strokeWidth={2} /> : <Sun size={20} strokeWidth={2} />}
-          </button>
+          </button> */}
           <a 
             href="#contact"
-            className="hidden sm:flex items-center justify-center px-6 py-2.5 rounded-full bg-lavender text-white font-medium text-sm hover:shadow-lg hover:-translate-y-0.5 hover:shadow-lavender/30 transition-all active:scale-95"
+            className="hidden sm:flex items-center justify-center px-6 py-2.5 rounded-full bg-navy text-white font-medium text-sm hover:shadow-lg hover:-translate-y-0.5 hover:shadow-navy/30 hover:bg-white hover:text-navy hover:border hover:border-navy transition-all active:scale-95"
           >
-            Let's Talk
+            Let's Talk <Send size={16} strokeWidth={2} className="ml-2" />
           </a>
         </div>
       </div>

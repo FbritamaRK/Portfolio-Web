@@ -75,7 +75,7 @@ export default function About() {
               className="w-40 h-40 rounded-full border-4 border-white shadow-xl shadow-black/5 overflow-hidden bg-bg-tertiary flex items-center justify-center relative"
             >
               <img 
-                src="https://api.dicebear.com/9.x/micah/svg?seed=FebriRaka2&backgroundColor=eef2ff&baseColor=f9c9b6&clothing=hoodie&clothingColor=ffffff&eyes=glasses,smiling" 
+                src="/src/img/avatar.png" 
                 alt="Avatar" 
                 className="w-full h-full object-cover scale-110 mt-4"
               />

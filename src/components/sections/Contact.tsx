@@ -61,16 +61,16 @@ export default function Contact() {
               <div className="w-8 h-8 rounded-full border border-black/5 flex items-center justify-center text-secondary bg-bg-secondary group-hover:bg-lavender group-hover:text-white transition-colors">
                 <Mail size={14} />
               </div>
-              <p className="text-xs font-semibold text-secondary group-hover:text-primary transition-colors">hello@febritamaraka.dev</p>
+              <p className="text-xs font-semibold text-secondary group-hover:text-primary transition-colors">febriraka34@gmail.com</p>
             </a>
             <div className="flex items-center gap-3 group cursor-default">
-              <div className="w-8 h-8 rounded-full border border-black/5 flex items-center justify-center text-secondary bg-bg-secondary group-hover:bg-mint group-hover:text-white transition-colors">
+              <div className="w-8 h-8 rounded-full border border-black/5 flex items-center justify-center text-secondary bg-bg-secondary group-hover:bg-navy group-hover:text-white transition-colors">
                 <MapPin size={14} />
               </div>
-              <p className="text-xs font-semibold text-secondary group-hover:text-primary transition-colors">Indonesia</p>
+              <p className="text-xs font-semibold text-secondary group-hover:text-primary transition-colors">Sleman, Daerah Istimewa Yogyakarta</p>
             </div>
             <div className="flex items-center gap-3 group cursor-default">
-              <div className="w-8 h-8 rounded-full border border-black/5 flex items-center justify-center text-secondary bg-bg-secondary group-hover:bg-peach group-hover:text-white transition-colors">
+              <div className="w-8 h-8 rounded-full border border-black/5 flex items-center justify-center text-secondary bg-bg-secondary group-hover:bg-green group-hover:text-white transition-colors">
                 <CheckCircle2 size={14} />
               </div>
               <p className="text-xs font-semibold text-secondary group-hover:text-primary transition-colors">Available for work</p>
@@ -100,7 +100,7 @@ export default function Contact() {
                </div>
                <ArrowUpRight size={14} className="text-secondary opacity-50 group-hover:opacity-100 group-hover:text-primary transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
              </a>
-             <a href="#" className="flex items-center justify-between group">
+             <a href="https://www.instagram.com/rrkaaa._/" className="flex items-center justify-between group">
                <div className="flex items-center gap-3">
                  <div className="w-8 h-8 rounded-full border border-[#E1306C]/10 flex items-center justify-center text-[#E1306C] bg-bg-secondary group-hover:bg-gradient-to-tr group-hover:from-[#FD1D1D] group-hover:to-[#833AB4] group-hover:text-white transition-colors">
                    <Instagram size={14} />
